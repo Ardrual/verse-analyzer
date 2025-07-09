@@ -187,7 +187,7 @@ class TestPOSVariants:
         result = get_line_stress(line)
         
         # Should have entries for each word
-        assert len(result) == 5  # I, will, record, the, present, situation
+        assert len(result) == 6  # I, will, record, the, present, situation
         assert all('word' in entry and 'stress' in entry for entry in result)
         
         # TODO: When implemented, verify correct stress patterns:
